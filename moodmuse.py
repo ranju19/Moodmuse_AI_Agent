@@ -148,7 +148,6 @@ else:
     if selected_mood:
         data = moods[selected_mood]
 
-        # 🎉 Mood-triggered animation
         if "celebrating" in selected_mood.lower():
             st.balloons()
         elif any(word in selected_mood.lower() for word in ["sad", "heartbroken", "lonely"]):
@@ -185,7 +184,6 @@ else:
         st.markdown(f"### 🎵 Now Playing:\n**{data['song']}**")
         st.video(data["youtube"])
 
-         # 🔊 Spotify Mood Playlist
         st.markdown("""
         <a href="https://open.spotify.com/search/{0}" target="_blank">
             <button style="margin-top: 10px; background-color:#1DB954; color:white; padding:10px 16px; font-size:16px; border:none; border-radius:8px; cursor:pointer;">🎧 Explore on Spotify</button>
@@ -204,4 +202,4 @@ else:
 
 # ---------------------- Footer ----------------------
 st.markdown("---")
-st.caption("🚀 Made with 💜 by Ranjani · MoodMuse Ultra · 2025")
+st.caption("🚀 Made with 💜 by Ranjani · MoodMuse · 2025")
